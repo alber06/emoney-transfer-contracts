@@ -54,3 +54,5 @@ To deploy the contracts to a public testnet, just run:
 `npx truffle migrate --network <your-network-name>`
 
 This will deploy all contracts inside `migrations` folder.
+
+More info on [OpenZeppelin docs](https://docs.openzeppelin.com/learn/connecting-to-public-test-networks)
