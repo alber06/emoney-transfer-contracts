@@ -55,4 +55,6 @@ To deploy the contracts to a public testnet, just run:
 
 This will deploy all contracts inside `migrations` folder.
 
-More info on [OpenZeppelin docs](https://docs.openzeppelin.com/learn/connecting-to-public-test-networks)
+## More info
+
+- More info on [OpenZeppelin docs](https://docs.openzeppelin.com/learn/connecting-to-public-test-networks)
