@@ -6,27 +6,26 @@ Smart contracts for the e-money transfer POC
 
 Networks are configured inside `truffle-config.js` file. Example:
 
-```json
-{
-  "networks": {
-    "development": {
-      "host": "127.0.0.1", // Localhost (default: none)
-      "port": 7545, // Standard Ethereum port (default: none)
-      "network_id": "*" // Any network (default: none)
+```javascript
+  networks: {
+    development: {
+      host: '127.0.0.1', // Localhost (default: none)
+      port: 7545, // Standard Ethereum port (default: none)
+      network_id: '*', // Any network (default: none)
     },
-    "rinkeby": {
-      "provider": () => new HDWalletProvider(mnemonic, nodeServiceApiKey),
-      "network_id": 4,
-      "gas": 4500000,
-      "gasPrice": 10000000000
-    }
+    rinkeby: {
+      provider: () => new HDWalletProvider(mnemonic, nodeServiceApiKey),
+      network_id: 4,
+      gas: 4500000,
+      gasPrice: 10000000000,
+    },
     // private: {
     // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),
     // network_id: 2111,   // This network is yours, in the cloud.
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
-  }
-}
+  },
+
 ```
 
 For it to work, you need a `secrets.json` file:
