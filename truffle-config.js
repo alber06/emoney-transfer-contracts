@@ -55,11 +55,9 @@ module.exports = {
     // },
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
-    rinkeby: {
+    sepolia: {
       provider: () => new HDWalletProvider(mnemonic, nodeServiceApiKey),
-      network_id: 4,
-      gas: 4500000,
-      gasPrice: 10000000000,
+      network_id: 11155111
     },
     // Useful for private networks
     // private: {

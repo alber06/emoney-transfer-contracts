@@ -13,9 +13,9 @@ Networks are configured inside `truffle-config.js` file. Example:
       port: 7545, // Standard Ethereum port (default: none)
       network_id: '*', // Any network (default: none)
     },
-    rinkeby: {
+    sepolia: {
       provider: () => new HDWalletProvider(mnemonic, nodeServiceApiKey),
-      network_id: 4,
+      network_id: 11155111,
       gas: 4500000,
       gasPrice: 10000000000,
     },
@@ -40,8 +40,8 @@ For it to work, you need a `secrets.json` file:
 To test the contract, just run:
 
 ```bash
-$ npx truffle console --network rinkeby
-truffle(rinkeby)> accounts
+$ npx truffle console --network sepolia
+truffle(sepolia)> accounts
 [ '0xEce6999C6c5BDA71d673090144b6d3bCD21d13d4',
   '0xC1310ade58A75E6d4fCb8238f9559188Ea3808f9',
 ...
